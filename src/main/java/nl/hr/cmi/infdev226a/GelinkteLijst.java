@@ -21,19 +21,38 @@ public class GelinkteLijst {
 	private int size;
 
 
-    public Node getFirst(){
-        throw new NotImplementedException();
+    public Object getFirst(){
+		return first.data;
 	}
 
 
-    public Node getLast(){
-        throw new NotImplementedException();
+    public Object getLast(){
+        return last.data;
 	}	
 	
 	/**
 	 * Voeg toe aan de voorkant
 	 */
-    public void insertFirst(Object o){throw new NotImplementedException();}
+    public void insertFirst(Object o){
+		//Create a new node and set all its references
+		Node newNode = new Node();
+		newNode.data = o;
+		newNode.next = first;
+		newNode.previous = null;
+
+		//if the list is not empty
+        if(this.first != null) {
+            //set the old first's previous to the newNode
+            this.first.previous = newNode;
+        }else{
+            //list was empty, newNode will be the only node.
+            //so also set the last
+            this.last = newNode;
+        }
+
+		//set the head to the newNode
+		this.first = newNode;
+	}
 
 	/**
 	 * Voeg toe aan de achterkant
