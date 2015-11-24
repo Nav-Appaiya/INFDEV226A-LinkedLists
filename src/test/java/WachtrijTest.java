@@ -17,9 +17,9 @@ public class WachtrijTest {
         wachtrij.enqueue(1);
         wachtrij.enqueue(2);
         wachtrij.enqueue(3);
-        assertEquals(3, wachtrij.dequeue());
-        assertEquals(2, wachtrij.dequeue());
         assertEquals(1, wachtrij.dequeue());
+        assertEquals(2, wachtrij.dequeue());
+        assertEquals(3, wachtrij.dequeue());
     }
 
     @Test
