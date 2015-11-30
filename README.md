@@ -7,3 +7,4 @@ De Klasses Stapel en Wachtrij implementeren de GelinkteLijst.
 - Er zijn unit tests die je kunnen helpen bij implementatie. Het gebruik van de
 tests is niet verplicht. Ga, naast de tests, zelf na of alle gevallen gedekt zijn.
 
+# INFDEV226A-LinkedLists
